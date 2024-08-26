@@ -1,0 +1,50 @@
+/* Your existing styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+/*you use to have word color and font in here but it was deleted beacause if not your content wont be in the box*/
+#blackboard {
+    background-color: #e0e3e9c2;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 1100px; /* Set the width as fixed */
+    max-width: 100%; 
+    height: 90vh; /* Adjust this as necessary */
+    max-height: 90vh; /* Ensure it doesn’t exceed the viewport */
+    margin: 20px;
+    position: relative;
+    overflow: auto;
+}
+
+#mainbody {
+    background-image: url('images/background image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Other styles */
+
+table {
+    width: 100%; /* Đặt bảng chiếm toàn bộ chiều rộng của container */
+    height: 100vh; /* Chiều cao toàn bộ màn hình */
+    border-collapse: collapse; /* Tùy chọn: Loại bỏ khoảng cách giữa các ô */
+}
+
+td {
+    text-align: center; /* Căn giữa nội dung theo chiều ngang */
+    vertical-align: middle; /* Căn giữa nội dung theo chiều dọc */
+    padding: 20px; /* Tùy chọn: Thêm khoảng cách xung quanh hình ảnh */
+}
+
+img {
+    max-width: 200px; /* Đặt chiều rộng tối đa để hình ảnh có kích thước đồng đều */
+    max-height: 200px; /* Đặt chiều cao tối đa để hình ảnh có kích thước đồng đều */
+}
