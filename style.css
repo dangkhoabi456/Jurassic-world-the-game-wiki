@@ -45,6 +45,6 @@ td {
 }
 
 img {
-    max-width: 200px; /* Đặt chiều rộng tối đa để hình ảnh có kích thước đồng đều */
-    max-height: 200px; /* Đặt chiều cao tối đa để hình ảnh có kích thước đồng đều */
+    max-width: 1000px; /* Đặt chiều rộng tối đa để hình ảnh có kích thước đồng đều */
+    max-height: 1000px; /* Đặt chiều cao tối đa để hình ảnh có kích thước đồng đều */
 }
