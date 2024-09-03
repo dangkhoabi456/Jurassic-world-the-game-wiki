@@ -1,26 +1,3 @@
-/* Your existing styles */
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-/*you use to have word color and font in here but it was deleted beacause if not your content wont be in the box*/
-#blackboard {
-    background-color: #e0e3e9c2;
-    color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    width: 1100px; /* Set the width as fixed */
-    max-width: 100%; 
-    height: 90vh; /* Adjust this as necessary */
-    max-height: 90vh; /* Ensure it doesn’t exceed the viewport */
-    margin: 20px;
-    position: relative;
-    overflow: auto;
-}
 
 #mainbody {
     background-image: url('images/background image.jpg');
