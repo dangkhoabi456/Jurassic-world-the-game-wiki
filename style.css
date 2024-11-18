@@ -1,4 +1,11 @@
+:root{
+    --primary-color:white;
+    --primary-background-color:black;
+}
 
+.homepagepic{
+    padding:50px
+}
 #mainbody {
     background-image: url('images/background image.jpg');
     background-size: cover;
@@ -6,22 +13,107 @@
     background-attachment: fixed;
     background-position: center;
 }
+#blackboard {
+background-color: var(--primary-background-color);
+    color: var(--primary-color);
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 80%;
+    height: 100%;
+    position: relative;
+    box-shadow: none;
+    border-radius: 10px;
+    overflow: auto;
+    padding-bottom: 20px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.grid-container2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 columns */
+    gap: 20px; /* Space between grid items */
+    padding: 20px
 
-/* Other styles */
+}
+.grid-container3{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 columns */
+    gap: 20px; /* Space between grid items */
+    padding: 20px
 
-table {
-    width: 100%; /* Đặt bảng chiếm toàn bộ chiều rộng của container */
-    height: 100vh; /* Chiều cao toàn bộ màn hình */
-    border-collapse: collapse; /* Tùy chọn: Loại bỏ khoảng cách giữa các ô */
+}
+.grid-container4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 columns */
+    gap: 20px; /* Space between grid items */
+    padding: 20px;
+}
+.grid-item{
+    display: flex;
+    justify-content: center; /* Centers the items horizontally */
+    align-items: center;     /* Centers the items vertically */
+    text-align: center;      /* Centers the text below the images */
+    flex-direction: column;
 }
 
-td {
-    text-align: center; /* Căn giữa nội dung theo chiều ngang */
-    vertical-align: middle; /* Căn giữa nội dung theo chiều dọc */
-    padding: 20px; /* Tùy chọn: Thêm khoảng cách xung quanh hình ảnh */
-}
 
-img {
-    max-width: 1000px; /* Đặt chiều rộng tối đa để hình ảnh có kích thước đồng đều */
-    max-height: 1000px; /* Đặt chiều cao tối đa để hình ảnh có kích thước đồng đều */
+.classadvantage1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+/* Header background setup */
+
+.header {
+    position: relative;
+    height: 300px;
+    background-image: url('images/headerpicture.jpg'); /* Add your image  */
+    background-size: cover;/* Ensures the image covers the entire header area */
+    background-position: center top;/* Adjusts the visible part of the image */
+  }
+  
+  /* Start box */
+  .start-box {
+    position: absolute; /* Ensure it's on top of the header */
+    bottom: 0; /* Align to the bottom of the header */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */ /* both left: 50%; and transform: translateX(-50%); combine help align content inside thepriority elemnt */
+    background-color: rgba(130, 130, 136, 0.8); /* Blue with some transparency */
+    padding: 10px 20px; /*Applies one value for vertical sides (top and bottom) and the other for horizontal sides (left and right).*/
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .start-box ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 15px; /* Add spacing between items */
+  }
+  
+  .start-box ul li {
+    cursor: pointer;
+    font-size: 18px;
+  }
+  /* Blue overlay box */
+
+.nav {
+    position: absolute;
+    bottom: 0; /* Keeps the blue box at the bottom of the header */
+    width: 100%;
+    background-color: blue;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+  }

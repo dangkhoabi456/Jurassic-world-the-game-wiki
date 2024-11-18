@@ -1,21 +1,121 @@
-body {
-    font-family: Arial, sans-serif;
-}
-
-.image-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: space-between;
-}
-
-.image-container a {
-    flex: 1 0 calc(33.333% - 10px); /* Each column takes 1/3 of the row minus the gap */
-    box-sizing: border-box;
+/* Your existing styles */
+.homepagepic{
     text-align: center;
 }
 
-.image-container img {
-    max-width: 100%;
-    height: auto;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
+/*you use to have word color and font in here but it was deleted beacause if not your content wont be in the box*/
+#blackboard {
+    background-color: #020914c2;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: none; 
+    width: 1100px; /* Set the width as fixed */
+    max-width: 100%; 
+    height: 90vh; /* Adjust this as necessary */
+    max-height: 90vh; /* Ensure it doesn’t exceed the viewport */
+    margin: 20px;
+    position: relative;
+    overflow: auto;
+}
+
+#mainbody {
+    background-image: url('images/background image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Other styles */
+
+table {
+    width: 100%; /* Đặt bảng chiếm toàn bộ chiều rộng của container */
+    height: 100vh; /* Chiều cao toàn bộ màn hình */
+    border-collapse: collapse; /* Tùy chọn: Loại bỏ khoảng cách giữa các ô */
+}
+
+
+td {
+    text-align: center; /* Căn giữa nội dung theo chiều ngang */
+    vertical-align: middle; /* Căn giữa nội dung theo chiều dọc */
+    padding: 20px; /* Tùy chọn: Thêm khoảng cách xung quanh hình ảnh */
+}
+
+img {
+    max-width: 1000px; /* Đặt chiều rộng tối đa để hình ảnh có kích thước đồng đều */
+    max-height: 1000px; /* Đặt chiều cao tối đa để hình ảnh có kích thước đồng đều */
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 columns */
+    gap: 20px; /* Space between grid items */
+    padding: 20px;
+    
+}
+.grid-container2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 columns */
+    gap: 20px; /* Space between grid items */
+    padding: 20px
+
+}
+.grid-container3{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 columns */
+    gap: 20px; /* Space between grid items */
+    padding: 20px
+
+}
+.grid-container4 {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr); /* Creates 2 columns */
+    gap: 20px; /* Space between grid items */
+    padding: 20px;
+}
+.grid-item {
+    display: flex;
+    justify-content: center; /* Centers the items horizontally */
+    align-items: center;     /* Centers the items vertically */
+    text-align: center;      /* Centers the text below the images */
+    flex-direction: column;  /* Keeps the image and text in a column layout */
+}
+
+.grid-item img {
+    max-width: 1000; /* Makes the image take up the full width of its container */
+    max-height: 1000;/*Khi được sử dụng với hình ảnh, height: auto; giúp giữ nguyên tỉ lệ gốc của hình ảnh. 
+    Điều này có nghĩa là khi bạn thay đổi chiều rộng (width) của hình ảnh, chiều cao sẽ tự động điều chỉnh để duy trì tỉ lệ gốc, 
+    tránh tình trạng hình ảnh bị méo.*/ 
+    border-radius: 5px; /* Adds some rounding to the image corners */
+}
+
+.grid-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fff; /* Adjust color as needed */
+}
+/*Explanation:
+Grid Container '(.grid-container)':
+
+'display: grid;': enables CSS Grid Layout.
+'grid-template-columns': repeat(3, 1fr); creates a layout with 3 equal-width columns.
+'gap: 20px;': adds space between each grid item.
+Grid Item (.grid-item):
+
+'text-align': center; centers the text (caption) below each image.
+Image Styling '(.grid-item img)':
+
+'width: 100%;': makes sure the image occupies the full width of its container, 
+'height: auto;': keeps the aspect ratio.
+Caption Styling '(.grid-item p)':
+
+Adjust the font-size, color, and other text properties to suit your design.*/
+/*Sử dụng các thẻ <div class="grid-item"> riêng lẻ cho mỗi hình ảnh và chú thích là một mẫu phổ biến trong các bố cục dạng lưới để 
+đảm bảo mỗi hình ảnh và chú thích liên quan của nó được xử lý như một đơn vị riêng biệt, mang lại sự linh hoạt hơn trong việc thiết kế và bố cục.*/
